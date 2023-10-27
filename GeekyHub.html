@@ -1,0 +1,68 @@
+
+<!-- saved from url=(0039)http://localhost/educational/index.php# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>GeekyHub</title>
+    <link rel="stylesheet" href="./GeekyHub_files/style.css">
+  </head>
+  <body>
+  
+  <header class="header">
+  <a href="http://localhost/educational/index.php#" class="logo">
+  <img src="./GeekyHub_files/logo.png" alt="Logo" width="150" height="100">
+  </a>
+  <nav class="nav-items">
+    <a href="http://localhost/educational/index.php#">Home</a>
+    <a href="http://localhost/educational/index.php#">About</a>
+    <a href="http://localhost/educational/index.php#">Contact</a>
+    <a href="http://localhost/educational/index.php#">Sign In</a>
+    <label class="switch" title="Toggle Dark Mode / Light Mode">
+      <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+      <span class="slider round"></span>
+    </label>
+  </nav>
+</header>
+<div class="sidebar">
+        <a href="http://localhost/educational/index.php#" class="logo">
+            <img src="./GeekyHub_files/logo.png" alt="Logo" width="150" height="100">
+        </a>
+        <ul class="sidebar-links">
+        <li>
+                <a href="http://localhost/educational/index.php#" class="sidebar-button" onclick="toggleAccordion()">Mathematics</a>
+                <ul class="accordion-links" id="accordionLinks">
+                    <li><a href="http://localhost/educational/index.php#" class="sub-link">Trigonometry</a></li>
+                    <li><a href="http://localhost/educational/index.php#" class="sub-link">Algebra</a></li>
+                    <li><a href="http://localhost/educational/index.php#" class="sub-link">Calculus</a></li>
+                    <li><a href="http://localhost/educational/index.php#" class="sub-link">Vectors</a></li>
+                    <li><a href="http://localhost/educational/index.php#" class="sub-link">Set Theory</a></li>
+                    <li><a href="http://localhost/educational/index.php#" class="sub-link">Coordinate Geometry</a></li>
+                    <li><a href="http://localhost/educational/index.php#" class="sub-link">Probability</a></li>
+                </ul>
+            </li>
+            <li><a href="http://localhost/educational/index.php#" class="sidebar-button">Quantitative Aptitude</a></li>
+            <li><a href="http://localhost/educational/index.php#" class="sidebar-button">Logical Reasoning</a></li>
+            <li><a href="http://localhost/educational/index.php#" class="sidebar-button">Computer Awareness</a></li>
+            <li><a href="http://localhost/educational/index.php#" class="sidebar-button">General English</a></li>
+        </ul>
+    </div>
+    
+<script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+
+            const header = document.querySelector(".header");
+            header.classList.toggle("dark-mode");
+
+            const toggleButton = document.getElementById("theme-toggle");
+            const tooltipText = toggleButton.title;
+            toggleButton.title = tooltipText.includes("Dark Mode") ? "Toggle Light Mode" : "Toggle Dark Mode";
+        }
+        function toggleAccordion() {
+            const accordionLinks = document.getElementById("accordionLinks");
+            accordionLinks.classList.toggle("show");
+        }
+    </script>
+  
+
+
+</body></html>
